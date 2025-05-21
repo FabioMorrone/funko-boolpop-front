@@ -257,16 +257,16 @@ body::before {
 
 /*HEADER*/
 header {
-  background-color: var(--primary);
+  background-color: var(--darker);
 
   overflow: hidden;
-  background-image: url("/halftone.svg");
+
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
 
   .custom-btn {
-    background-color: var(--darker);
+    background-color: var(--tertiary);
     color: white;
     border: none;
   }
@@ -319,9 +319,9 @@ header {
 
 footer {
   /*background-color: var(--darker);*/
-  background-color: var(--primary);
+  background-color: var(--darker);
   overflow: hidden;
-  background-image: url("/halftone.svg");
+
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
