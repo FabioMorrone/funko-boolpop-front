@@ -13,7 +13,7 @@ export default function ProductImages({ images }) {
 
     return (
         <>
-            <div className="position-relative h-100">
+            <div className="position-relative">
                 <ProductImagesUi images={images} index={currentIndex} />
 
                 <div className="dots_product_container">
