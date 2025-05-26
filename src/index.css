@@ -133,6 +133,7 @@ body {
 /*JUMBO region*/
 
 .jumbo_slide {
+
   overflow: hidden;
   min-width: 100%;
   height: 26.5rem;
@@ -150,6 +151,7 @@ body {
 
 .jumbo_img {
   width: 100%;
+
   object-fit: cover;
   display: block;
   margin-inline: auto;
@@ -161,12 +163,13 @@ body {
 }
 
 .jumbo_info {
-  position: absolute;
+
   z-index: 10;
   bottom: 8%;
   left: 5%;
   color: var(--darker);
   color: var(--sf-text);
+  padding: 2rem;
 }
 
 
@@ -177,6 +180,8 @@ body {
   align-items: center;
   justify-content: center;
   transition-duration: 1s;
+  display: block;
+  width: 100%;
 
   &:hover {
     background-color: #0000003f;
@@ -186,6 +191,8 @@ body {
     transition-duration: 0.5s;
     max-width: 100%;
     height: auto;
+    width: 100%;
+    object-fit: cover;
 
     &:hover {
       transform: scale(1.02);
@@ -703,14 +710,9 @@ td {
 
 /*tablet in su*/
 @media screen and (min-width: 768px) {
-  .jumbo_img {
-    width: 70%;
-  }
 
-  .jumbo_slide {
-    /*height: 75vh;*/
-    height: 28rem;
-  }
+
+
 
   .cart-offcanvas {
     width: 60%;
@@ -791,7 +793,7 @@ td {
   }
 
   .jumbo_slide {
-    height: 70vh;
+    height: 50vh;
   }
 }
 

@@ -5,18 +5,28 @@ export default function JumboUi({ productList, slideIndex, setIndex }) {
         <>
 
             <div className="jumbo_slide">
-                <Link className="img_jumbo_container" to={`/${productList[slideIndex].slug}`}>
-                    <img className="jumbo_img" src={`http://localhost:3000/${productList[slideIndex].banner}`} alt="" />
-                </Link>
+                <div className="container h-100">
+                    <div className="row h-100 align-items-center">
+                        {/* Colonna immagine */}
+                        <div className="col-12 col-lg-6">
+                            <Link className="img_jumbo_container" to={`/${productList[slideIndex].slug}`}>
+                                <img className="jumbo_img" src={`http://localhost:3000/${productList[slideIndex].banner}`} alt="" />
+                            </Link>
+                        </div>
 
-                <div className="jumbo_info">
-                    <h1 className="jumbo-title d-none d-lg-block">{productList[slideIndex].name}</h1>
-                    {/* <p className="pb-4 me-1 fs-6 d-none d-lg-block">{productList[slideIndex].description}</p> */}
+                        {/* Colonna testo */}
+                        <div className="col-12 col-lg-6">
+                            <div className="jumbo_info">
+                                <h1 className="jumbo-title">{productList[slideIndex].name}</h1>
+                                <p className="pb-4 me-1 fs-6">{productList[slideIndex].description}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div className="dots">
                     <ul className="list-unstyled">
                         {productList.map((dot, i) => (
-
                             <li key={dot.item_number}>
                                 {i == slideIndex ? (
                                     <>
@@ -32,12 +42,11 @@ export default function JumboUi({ productList, slideIndex, setIndex }) {
                                     </>
                                 )}
                             </li>
-
                         ))}
                     </ul>
                 </div>
-            </div >
-
+            </div>
         </>
     )
 }
+
