@@ -8,6 +8,7 @@
     --accent: #81d2c7;
     --text: #000000;
     --text-light: #ffffff;
+    --btn: rgb(6, 139, 111);
 }
 
 
@@ -20,7 +21,7 @@
     font-size: 35px;
     border: none;
     border-radius: 50%;
-    background-color: var(--tertiary);
+    background-color: var(--btn);
     color: white;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);

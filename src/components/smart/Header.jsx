@@ -17,7 +17,7 @@ export default function Header({ setCartOpen }) {
               <img className="w-100" src="/logo.svg" alt="" />
             </Link>
             <button
-              className="navbar-toggler d-lg-none"
+              className="navbar-btn navbar-toggler d-lg-none"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsibleNavId"

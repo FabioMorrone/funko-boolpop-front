@@ -266,14 +266,14 @@ header {
   background-blend-mode: overlay;
 
   .custom-btn {
-    background-color: var(--tertiary);
+    background-color: rgb(12, 151, 121);
     color: white;
     border: none;
   }
 
   .custom-btn:hover {
-    background-color: var(--tertiary);
-    color: var(--darker);
+    background-color: rgb(6, 139, 111);
+    color: var(--background);
   }
 
   img {
@@ -827,6 +827,36 @@ td {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-btn {
+    border: white;
+  }
+
+  .navbar-toggler {
+
+    border: 2px solid var(--btn);
+
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Questo rende l'icona dell'hamburger menu bianca */
+  }
+
+  .navbar {
+    background-color: var(--darker);
+    /* colore di sfondo della navbar in mobile */
+    border-radius: 0 0 15px 15px;
+    /* bordi arrotondati in basso */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* ombra sottile */
+  }
+
+  .navbar.show {
+    /* stile quando il menu è aperto */
+    border-radius: 0;
+    /* rimuove i bordi arrotondati quando il menu è aperto */
+  }
+
   .jumbo_slide {
     min-height: 60vh;
     /* ridotto per tablet */
