@@ -150,11 +150,11 @@ body {
 .jumbo-title {
   font-size: 3rem;
   font-weight: 800;
+  color: white;
 }
 
 .jumbo_img {
   width: 100%;
-
   object-fit: cover;
   display: block;
   margin-inline: auto;
@@ -166,6 +166,7 @@ body {
 
 .jumbo-p {
   font-size: 2rem;
+  color: white;
 }
 
 .jumbo_info {
