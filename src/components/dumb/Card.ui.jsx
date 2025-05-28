@@ -50,3 +50,4 @@ export default function CardUi({ images, name, price, license, promotions, slug 
         </>
     )
 }
+
