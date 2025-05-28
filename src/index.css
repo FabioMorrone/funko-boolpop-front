@@ -434,7 +434,7 @@ footer {
   }
 
   .text-promo {
-    color: var(--tertiary);
+    color: var(--primary);
   }
 
   .text-old-price {
@@ -557,11 +557,12 @@ td {
 }
 
 .sm-font {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .arrow-caro {
-  color: var(--primary);
+  color: var(--darker);
+
 }
 
 .search_results_container {

@@ -242,7 +242,7 @@ export default function ProductPage() {
                             {suggested.state === 'success' ? (
                                 <>
                                     <div className="carousel_productpage mb-5">
-                                        <h1 className="fs-3">Guarda anche...</h1>
+                                        <h1 className="fs-3"><strong>Guarda anche...</strong></h1>
                                         <CarouselUi dataLength={suggested.results.totalPages} page={pageDate} setPage={setPageDate} content={(
                                             <>
                                                 <List products={suggested.results} queryName={'date'} page={pageDate} query={date} />
