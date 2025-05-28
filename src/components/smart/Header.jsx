@@ -14,7 +14,7 @@ export default function Header({ setCartOpen }) {
         <nav className="navbar navbar-expand-sm position-static">
           <div className="container position-static">
             <Link to={"/"} className="navbar-brand">
-              <img className="w-100" src="/logo.svg" alt="" />
+              <img className="w-100" src="/public/logo_updated.svg" alt="" />
             </Link>
             <button
               className="navbar-btn navbar-toggler d-lg-none"
